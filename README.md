@@ -4,7 +4,7 @@ The code is built on homework 2 of Berkeley's CS 294 [course](https://www.rll.be
 
 There are two policies 
 - High Level Policy: This policy receives a state as input and outputs parameters of an affine function, ie. weights W and bias b 
-- Low Level Policy: This policy receives a state as input and outputs features that are input to the affine function, g_theta(s_t+k)
+- Low Level Policy: This policy receives a state as input and outputs features that are input to the affine function
 
 The action is then sampled from the vector defined by the affine function applied to the output of the low-level policy.
 
