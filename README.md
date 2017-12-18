@@ -2,13 +2,13 @@
 
 The code is built on homework 2 of Berkeley's CS 294 [course](https://www.rll.berkeley.edu/deeprlcourse)
 
-There are two policies 
-- High Level Policy: This policy receives a state as input and outputs parameters of an affine function, ie. weights W and bias b 
-- Low Level Policy: This policy receives a state as input and outputs features that are input to the affine function
+There are two networks 
+- High Level Controller: This network receives a state as input and outputs parameters of an affine function, ie. weights W and bias b 
+- Low Level Controller: This network receives a state as input and outputs features that are input to the affine function
 
-The action is then sampled from the vector defined by the affine function applied to the output of the low-level policy.
+The action is then sampled from the vector defined by the affine function applied to the output of the low-level controller.
 
-Now hierarchy is achieved by enforcing that the high-level policy not change for k-timesteps (a specified hyperparameter).
+Now hierarchy is achieved by enforcing that the high-level controller's output not change for k-timesteps (a specified hyperparameter).
 
 ### Example
 Read `train_pg.py` for all command line arguments. Example run:
